@@ -1,0 +1,52 @@
+body {
+  background-color: #2827cc;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem 5rem;
+  border-radius: 20px;
+  width:40%;
+  margin: 5em;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+}
+textarea:focus{
+  outline-color: #2827cc;
+}
+#output{
+  overflow-x:scroll;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:679px){
+  .container{
+    height:auto;
+  }
+}
+@media screen and (max-width:469px){
+  .container{
+    padding:2rem;
+  }
+  h1,#output,h3{
+    font-size: small;
+  }
+}
